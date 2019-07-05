@@ -43,8 +43,8 @@ nav ul li a {
 nav ul li a:hover { color: #111; text-decoration: none; }
 
 #main {
-  max-width: 70em;
-  color: #111;
+  max-width: 50em;
+  color: #555;
   margin: 0 auto 0 2em;
   padding: 1em 3em 2em 1em;
   border: 0;
