@@ -10,10 +10,8 @@ page_filter() {
 site_menu() {
   echo "<ul>"
 # For conditional directory navigation
-#  [ -z "`echo $1 | grep index.md`" ] && echo "<li><a href=\"index.html\">.</a></li>"
-#  [ "`dirname $1`" != "." ] && echo "<li><a href=\"../index.html\">..</a></li>"
-  echo "<li><a href=\"index.html\">.</a></li>"
-  echo "<li><a href=\"../index.html\">..</a></li>"
+  [ -z "`echo $1 | grep index.md`" ] && echo "<li><a href=\"index.html\">.</a></li>"
+  [ "`dirname $1`" != "." ] && echo "<li><a href=\"../index.html\">..</a></li>"
   FILES=`ls \`dirname $1\` | sed -e 's/\.md$/.html/g'`
   for i in $FILES ; do
     page_filter $i && continue
@@ -27,7 +25,7 @@ site_menu() {
 site_page() {
   # Header
   cat << _header_
-  <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
