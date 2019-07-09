@@ -1,5 +1,10 @@
 # Projects
 
+## Coding
+
+- Food record
+- Weather console
+
 ## Leatherworking
 
 - M's wallet
