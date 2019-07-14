@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Blacklist filter (BLACKLIST in the config file)
 page_filter() {
@@ -9,7 +9,7 @@ page_filter() {
 
 site_menu() {
   echo "<ul>"
-# For conditional directory navigation
+  # Conditional directory navigation
   [ -z "`echo $1 | grep index.md`" ] && echo "<li><a href=\"index.html\">.</a></li>"
   [ "`dirname $1`" != "." ] && echo "<li><a href=\"../index.html\">..</a></li>"
   FILES=`ls \`dirname $1\` | sed -e 's/\.md$/.html/g'`
