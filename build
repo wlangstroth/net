@@ -2,7 +2,7 @@
 
 # Blacklist filter (BLACKLIST in the config file)
 page_filter() {
-  for b in $BLACKLIST; do
+  for b in $MENU_BLACKLIST; do
     [ "$b" = "$1" ] && return 0
   done
 }
