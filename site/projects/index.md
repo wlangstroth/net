@@ -15,4 +15,3 @@
 - weight belt gym bag
 - watch strap for D
 - steampunk harness system
-- deadlift shin guards
