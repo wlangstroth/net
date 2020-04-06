@@ -2,12 +2,15 @@
 
 ## Coding
 
-- Food record (nom) <span style="color: green">✔</span>
-- Weather console (outside)
-- Organizer (goalkeeper)
+- console
+- Food record (fud)
+- Weather component (outside)
+- Organizer & project scheduler (goalkeeper)
 - Automated site checker (knock)
 - Workout record (iron)
 - gpg password store (pass)
+- Forum (rubble)
+- Factoid database (spot)
 
 ## Leatherworking
 
